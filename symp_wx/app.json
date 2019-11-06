@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/auth/login/login",
+    "pages/industry/industry",
+    "pages/businessCard/businessCard",
+    "pages/register/register",
+    "pages/textlist/textlist",
+    "pages/connection/connection",
+    
+    "pages/introduction/introduction",
+    "pages/firmlist/firmlist",
+    "pages/mescenter/mescenter",
+    "pages/demo/demo",
+    "pages/buyvip/buyvip",
+    "pages/userinfo/userinfo",
+    "pages/sign/sign",
+    "pages/test/test",
+    "pages/publish/publish",
+    "pages/logs/logs", 
+   
+    "pages/caller/caller",
+    "pages/messages/messages",
+    
+    "pages/home/home"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "事业名片尝试获取你的地理位置" 
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#858585",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/businessCard/businessCard",
+        "iconPath": "images/home1.png",
+        "selectedIconPath": "images/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/textlist/textlist",
+        "iconPath": "images/text1.png",
+        "selectedIconPath": "images/text.png",
+        "text": "文章"
+      },
+      
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/user2.png",
+        "selectedIconPath": "images/user1.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

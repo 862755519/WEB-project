@@ -1,0 +1,54 @@
+<view class="container">
+<view class="user_head">
+   <image bindtap="changeAvatar" src="{{avatar}}"></image>
+</view>
+   <van-cell-group>
+  <van-field
+    value="{{username}}"
+    input-align="right"
+    label="用户名"
+    placeholder="{{userinfo.nickname}}"
+    bind:input="setusername"
+  />
+  </van-cell-group>
+   <van-cell-group >
+  <van-field
+    value="{{gender}}"
+    input-align="right"
+    label="性别"
+   bind:input="setgender"
+  />
+  
+  </van-cell-group>
+  <!-- <van-cell wx:if="{{userinfo.gender==0}}" title="性别" is-link value="" />
+  <van-cell wx:if="{{userinfo.gender==1}}" title="性别" is-link value="女" />
+  <van-cell wx:if="{{userinfo.gender==2}}" title="性别" is-link value="男" /> -->
+   <van-cell-group>
+  <van-field
+    value="{{ tel }}"
+    input-align="right"
+    label="手机号码"
+    bind:input="settel"
+  />
+  </van-cell-group>
+   <van-cell-group>
+  <van-field
+    value="{{ wxcode }}"
+    input-align="right"
+    label="微信号"
+    bind:input="setwxcode"
+  />
+  </van-cell-group>
+  <van-cell-group>
+  <van-field
+    value="{{sign}}"
+    label="个性签名"
+    type="textarea"
+    input-align="right"
+    autosize
+    border="{{ false }}"
+    bind:input="setsig"
+  />
+</van-cell-group>
+<button class="button" bindtap="update">确认修改</button>
+</view>

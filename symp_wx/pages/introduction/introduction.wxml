@@ -1,0 +1,17 @@
+<!--pages/introduction/introduction.wxml-->
+<view>
+  <van-cell-group>
+    <van-cell title="昵称" value="{{nickname}}" />
+    <van-cell title="公司" value="{{bcName}}"  />
+    <van-cell title="手机号" value="{{mobile}}" />
+  </van-cell-group>
+
+  <view class="section">
+    <form bindsubmit="bindFormSubmit">
+      <textarea wx:if="{{area}}" disabled="true"   placeholder=" 可以编辑你的名片信息" value="{{text}}" name="textarea"/>
+       <textarea wx:if="{{!area}}"  placeholder=" 可以编辑你的名片信息" value="{{text}}" name="textarea"/>
+      <button wx:if="{{!area}}"  class="btn" form-type="submit"> 提交 </button>
+    </form>
+  </view>
+  
+</view>

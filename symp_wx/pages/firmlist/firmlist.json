@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "选择公司",
+  "usingComponents": {
+    "van-button": "/miniprogram_npm/vant-weapp/dist/button/index",
+    "van-row": "/miniprogram_npm/vant-weapp/dist/row/index",
+    "van-col": "/miniprogram_npm/vant-weapp/dist/col/index",
+    "van-loading": "/miniprogram_npm/vant-weapp/dist/loading/index"
+   
+  }
+}

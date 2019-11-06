@@ -1,0 +1,62 @@
+<view class="container">
+ <view class="head">
+   <view class="circle1">
+    <view class="circle2">
+        <view class="circle3" bindtap="sign"  data-year="{{currentYear}}"
+      data-month="{{currentMonth}}">
+         <view class="cieclename">签到</view>
+         <view class="circle_day">签到{{count}}天</view>
+        </view>
+    </view>
+   </view>
+   <view class="circle_text">
+      <view class="circle_text">{{active.siaName}}</view>
+   </view>
+ </view>
+
+ <view class="calendar">
+	<view class='tit'>
+		<view class='pre' bindtap='gotoPreMonth'>{{'<'}}</view>
+		<view class='current'>{{currentYear}}年{{currentMonth}}月</view>
+		<view class='next' bindtap='gotoNextMonth'>{{'>'}}</view>
+	</view>
+	<view class='content' >
+		<view>日</view>
+		<view>一</view>
+		<view>二</view>
+		<view>三</view>
+		<view>四</view>
+		<view>五</view>
+		<view>六</view>
+    <view 	wx:for="{{allArr}}" 
+			wx:key="{{index}}">
+		<view 
+      wx:if="{{item.num == 1}}"
+      id="datebox"
+			class="datebox {{item.month == 'current' ? '' : 'gray'}}"
+		>{{item.date}}</view>
+
+    	<view 
+      wx:if="{{item.num == 0}}"
+			class="datebox {{item.month == 'current' ? '' : 'gray'}}"
+		>{{item.date}}</view>
+	</view>
+
+  </view>
+  
+</view>
+<view class="line"></view>
+
+<view class="text">
+<view class="text_title">签到规则</view>
+<view class="text_desc">
+1.活动开始时间：{{active.addTime}}
+</view>
+<view class="text_desc">
+2.活动结束时间：{{active.endTime}}
+</view>
+<view class="text_desc">
+3.{{active.siaDetail}}
+</view>
+</view>
+</view>

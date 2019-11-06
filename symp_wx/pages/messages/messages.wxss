@@ -1,0 +1,20 @@
+.container{
+  background: #F9F9F9;
+  padding-left: 35rpx;
+  padding-right: 35rpx;
+  padding-bottom: 35rpx;
+}
+.messages{
+  border: 1px solid #fff;
+  background: #fff;
+  padding: 30rpx;
+  border-radius: 5px;
+  margin-top: 25rpx;
+}
+.messages_name{
+  font-size: 37rpx;
+}
+.messages_time,.messages_text{
+  font-size: 30rpx;
+  color: #818181;
+}

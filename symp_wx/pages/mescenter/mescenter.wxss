@@ -1,0 +1,60 @@
+.mes{
+  width: 700rpx;
+  height: 180rpx;
+  margin: 15rpx auto;
+  border: 1px solid #fff;
+  background-color: #fff;
+  padding-right: 10rpx;
+  border-radius: 10rpx;
+}
+.accomplish{
+  height: 60rpx;
+  margin-top: 10rpx;
+  width: 100%;
+  text-align: center;
+  color: #999;
+  font-size: 30rpx;
+}
+.mes_left{
+  width: 200rpx;
+  height: 180rpx;
+  float: left;
+  text-align: center;
+}
+.mes_left image{
+  width: 150rpx;
+  height: 150rpx;
+  margin-top: 10rpx;
+}
+.mes_right{
+  width: 490rpx;
+  height: 180rpx;
+  float: left;
+}
+.mes_row{
+  width: 100%;
+  height: 60rpx;
+}
+.mes_name{
+  float: left;
+  font-size: 30rpx;
+  line-height: 60rpx;
+}
+.mes_time{
+  float: right;
+  font-size: 25rpx;
+  line-height: 60rpx;
+  color: #919191;
+}
+.mes_desc{
+  color: #8E8E8E;
+  font-size: 26rpx;
+  height: 100rpx;
+  overflow: hidden;
+  
+ 
+}
+page{
+  background: #F7F7F7;
+}
+

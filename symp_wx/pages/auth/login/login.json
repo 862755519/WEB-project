@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "登录",
+  "usingComponents": {
+    "van-toast": "/miniprogram_npm/vant-weapp/dist/toast/index",
+    "van-field": "/miniprogram_npm/vant-weapp/dist/field/index",
+    "van-button": "/miniprogram_npm/vant-weapp/dist/button/index"
+  }
+
+}

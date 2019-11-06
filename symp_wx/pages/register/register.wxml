@@ -1,0 +1,38 @@
+<view class="container">
+  <view class="title_name">
+    <view>
+      事业名片   快速推广
+    </view>
+      
+  </view>
+  <view class="box">
+    <view class="title_tran">
+      让推广更高效
+    </view>
+  </view>
+    
+    
+  <view class="form-box">
+  <view class="idea">快速绑定</view>
+  <van-row>
+  <van-col span="24">
+  <view class="select" bindtap="selectFirm">{{fname}}</view>
+  </van-col>
+</van-row>
+
+<van-row>
+  <van-col span="14">
+  <view class="select">{{phone}}</view>
+  </van-col>
+ <van-col span="10">
+  <view class="select">
+    <button  class="gettel" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号码</button>
+  </view>
+  
+  </van-col>
+</van-row>
+
+   <button class="but" bindtap="bindTel">确认绑定</button>
+   <view class="text">*注册并同意《事业名片协议》</view>
+  </view>
+</view>

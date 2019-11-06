@@ -1,0 +1,91 @@
+<view class="businessCard">
+  <view class="card_item">
+     
+      <van-panel title="个人名片" >
+          <view class="card">
+             
+              <view class="card_left">
+                  <!-- <span>方海科技</span> -->
+                  <image class="card_computer" src="{{usercart.bcLogo}}" />
+                  <image class="car_heard" src="{{usercart.avatar}}" />
+                   <span class="card_title">{{usercart.nickname}}</span>
+                   <span class="card_text">{{usercart.bcName}}</span>
+                   <image class="car_ewm" src="{{usercart.qrCode}}" />
+              </view>
+                  <view class="lucency">
+                    <p class="demo" wx:if="{{show}}">
+                      <p>{{showtext}}查看了你的名片</p>
+                     </p>
+                  </view>
+                     
+          </view>
+          <view class="mar_top">
+              <van-row>
+                <van-col span="18">电话号码：{{usertel}}</van-col>
+                <van-col span="6">
+                    <van-button type="default" bindtap="call" size="small">拨打电话</van-button>
+                </van-col>
+              </van-row>
+          </view>
+            
+          <view class="mar_top">
+              <van-row>
+                <van-col span="18">微信号码：{{usercart.wxCode}}</van-col>
+                <van-col span="6">
+                    <van-button type="default" size="small" bindtap='copyText' data-text="{{usercart.wxCode}}">复制号码</van-button>
+                </van-col>
+              </van-row>
+          </view>
+            
+        <view class="dow_btn">
+            <van-col span="8" wx:if="{{fenxiangshow == 0}}">
+                    <button class="share_but" open-type="share" >分享名片</button>
+            </van-col>
+
+            <van-col span="8" wx:if="{{fenxiangshow == 1}}">
+                    <button class="share_but" bindtap="noshare">分享名片</button>
+            </van-col>
+
+            <van-col span="8">
+                    <button class="share_but" bindtap="retcart">回传名片</button>
+            </van-col>
+            <van-col span="8">
+                    <button class="share_but" bindtap="introduction" >名片简介</button>
+            </van-col>
+        </view>
+      </van-panel> 
+        
+  </view>
+    
+  <view class="card_item">
+
+
+      <van-panel 
+   title="文章头条">
+        
+        <view  class="cart" wx:for='{{usertext}}' wx:key="key" data-artid="{{item.id}}" bindtap="ontext">
+        <view class="cart_img">
+          <image src="{{item.artIcon}}"></image>
+
+        </view>
+        <view class="cart_text">
+          <view class="text1">{{item.artTitle}}</view>
+          <view class="text2"><image class="head_img" src="{{usercart.avatar}}"></image>{{item.usName}}</view>
+          <view  class="textname">
+          <span class="text_span2">{{item.addTime}}</span></view>
+        </view>
+      </view>
+       
+      </van-panel>    
+  </view>
+  <view class="card_item">
+      <van-panel title="{{usercart.bcName}}"  >
+         
+            <view class="section">
+  <video class= "videoCss" src='{{usercart.bcVideo}}'  objectFit='cover' show-center-play-btn = true  controls  danmu-btn page-gesture = "true" enable-progress-gesture = true></video>
+</view>
+         
+      </van-panel>    
+  </view>
+    
+</view>

@@ -1,0 +1,66 @@
+<van-row>
+  <van-col span="6" class="head_con">
+    <image src="{{userinfo.avatar}}"></image>
+  </van-col>
+  <van-col span="18">
+    <view class="username">{{userinfo.nickname}}</view>
+    <view class="viptime">会员到期时间{{userinfo.vipOpeningTime}}</view>
+  </van-col>
+</van-row>
+<view class="line"></view>
+<view class="vip_title">
+  <span class="span1">会员套餐</span>
+  <span class="span2">开通会员享多重好礼</span>
+</view>
+
+<block wx:for="{{viplist}}" wx:key="key">
+  <view class="vip_cart  {{state==index?'active-tag':''}}" bindtap="selectCart" data-id='{{item.id}}' data-price="{{item.bcvPrice}}" data-key="{{index}}">
+    <van-row>
+      <van-col span="18">
+        <view class="vip_name">{{item.bcvName}}
+         <span wx:if="{{item.bcvSuperValue==1}}" class="chaozhi">超值</span>
+        <span wx:if="{{item.bcvOnce==1}}" class="one">（限购一次）</span>
+        </view>
+       
+        <view  class="vip_text">有效天数{{item.bcvDay}}</view>
+      </van-col>
+      <van-col span="6">
+        <view class="sprice">￥:{{item.bcvPrice}}</view>
+      </van-col>
+    </van-row>
+  </view>
+</block>
+
+
+<view class="total">
+  <van-row>
+    <van-col span="16">
+      <view class="sum">总价:
+        <span class="price_span">￥:{{tatol}}</span>
+      </view>
+    </van-col>
+    <van-col span="8">
+      <view class="but" bindtap="submit">确认支付</view>
+    </van-col>
+  </van-row>
+</view>
+
+<!-- 弹出层 -->
+<van-popup show="{{show}}" bind:close="onClose" class="popup">
+  <view class="con">
+    <van-row>
+      <van-col span="22" class="text_box">购买成功</van-col>
+      <van-col span="2" class="icon_box">
+        <image bindtap="off" class="pupop_icon" src="../../images/quxiao.png"></image>
+      </van-col>
+    </van-row>
+    <view class="ticket">恭喜你获得商城抵扣券一张</view>
+    <view class="img_box">
+      <image class="pupop_img" src="../../images/banner.png"></image>
+    </view>
+    <view class="but_popup">
+      <button>前往商城</button>
+    </view>
+
+  </view>
+</van-popup>

@@ -1,0 +1,40 @@
+.industry{
+  padding: 25rpx;
+}
+.list{
+  margin-bottom: 90rpx;
+}
+.box{
+  border: 1px solid #EEEEEE;
+  text-align: center;
+  font-size: 27rpx;
+  color: #353435;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 5rpx;
+  margin-top: 30rpx;
+  margin-left: 5rpx;
+  overflow: hidden;
+  padding-left: 5rpx;
+  padding-right: 5rpx;
+}
+.blue{
+   border: 1px solid #2492F4;
+   background: #2492F4;
+   color: #fff;
+}
+.but{
+  height: 80rpx;
+  position: fixed;
+  bottom: 5rpx;
+  width: 93%;
+  background: #2492F4;
+  color: #fff;
+  border-radius: 5rpx;
+  text-align: center;
+  line-height: 80rpx;
+  border: 1px solid #2492F4;
+  
+}
+
+

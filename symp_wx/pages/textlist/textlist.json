@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "资讯中心",
+  "usingComponents": {
+    "van-button": "/miniprogram_npm/vant-weapp/dist/button/index",
+    "van-row": "/miniprogram_npm/vant-weapp/dist/row/index",
+    "van-col": "/miniprogram_npm/vant-weapp/dist/col/index",
+    "van-tab": "/miniprogram_npm/vant-weapp/dist/tab/index",
+    "van-tabs": "/miniprogram_npm/vant-weapp/dist/tabs/index",
+    "van-cell": "/miniprogram_npm/vant-weapp/dist/cell/index",
+    "van-cell-group": "/miniprogram_npm/vant-weapp/dist/cell-group/index"
+  }
+}

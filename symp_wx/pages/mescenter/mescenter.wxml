@@ -1,0 +1,15 @@
+<view class="container">
+   <view class="mes" wx:for="{{list}}" wx:key="index">
+      <view class="mes_left"><image src="../../images/mess.png"></image></view>
+      <view class="mes_right">
+         <view class="mes_row">
+           <view class="mes_name">{{item.neTitle}}</view>
+           <view class="mes_time">{{item.createTime}}</view>
+         </view>
+         <view class="mes_desc">
+        {{item.neContent}}
+         </view>
+      </view>
+   </view>
+    <view class="accomplish" hidden="{{show}}">没有更多了</view>
+</view>

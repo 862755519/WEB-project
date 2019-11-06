@@ -1,0 +1,162 @@
+.head_con{
+ 
+  height: 150rpx;
+  text-align: center;
+}
+.head_con image{
+  height: 110rpx;
+  width: 110rpx;
+  border-radius: 65rpx;
+}
+.chaozhi{
+  border: 1px solid #2492F4;
+  color: #2492F4;
+  font-size: 24rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  border-radius: 20rpx;
+}
+.one{
+  color: red;
+  font-size: 28rpx;
+}
+.username{
+  font-size: 28rpx;
+  height: 50rpx;
+  line-height: 60rpx;
+  color: #333;
+}
+.viptime{
+  font-size: 26rpx;
+  height: 60rpx;
+  line-height: 50rpx;
+  color: #999;
+}
+.line{
+  background: #F7F7F7;
+  height: 20rpx;
+  margin-top: 10rpx;
+}
+.vip_title{
+  height: 60rpx;
+  width: 90%;
+  margin: 20rpx auto;
+}
+.span1{
+  font-size: 30rpx;
+  color: #333;
+  line-height: 60rpx;
+}
+.span2{
+  font-size: 27rpx;
+  color: #999;
+  margin-left: 25rpx;
+  line-height: 60rpx;
+}
+.vip_cart{
+  border: 1px solid #F2F2F2;
+  height: 130rpx;
+  width: 90%;
+  margin: 30rpx auto;
+  border-radius: 10rpx;
+}
+
+.active-tag{
+  border: 1px solid #2492F4;
+  background: #E7F4FF;
+ }
+
+.checked_parameter{
+  border: 1px solid #2492F4;
+  height: 130rpx;
+  width: 90%;
+  margin: 30rpx auto;
+  border-radius: 10rpx;
+  background: #E7F4FF;
+}
+
+.vip_name{
+  font-size: 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding-left: 25rpx;
+  color: #333;
+}
+.vip_text{
+  font-size: 27rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding-left: 25rpx;
+  color: #999;
+}
+.sprice{
+  color: #2492F4;
+  font-size: 35rpx;
+  text-align: left;
+  height: 130rpx;
+  line-height: 120rpx;
+}
+.total{
+  height: 90rpx;
+  border: 1px solid #2492F4;
+  position: fixed;
+  width: 100%;
+  bottom:0rpx;
+}
+.sum{
+  height: 90rpx;
+  line-height: 90rpx;
+  padding-left: 40rpx;
+  font-size: 30rpx;
+}
+.price_span{
+  font-size: 35rpx;
+  color: #2492F4;
+}
+.but{
+  height: 90rpx;
+  text-align: center;
+  line-height: 90rpx;
+  color: #fff;
+  background: #2492F4;
+  border: 1px solid #2492F4;
+}
+
+.pupop_icon{
+  width: 60rpx;
+  height: 60rpx;
+}
+.con{
+  width: 600rpx;
+  height: 550rpx;
+  border-radius: 10rpx;
+  padding: 30rpx;
+}
+.text_box{
+  text-align: center;
+  font-size: 45rpx;
+}
+.ticket{
+  text-align: center;
+  height: 50rpx;
+  margin-top: 30rpx;
+}
+.img_box{
+  height: 180rpx;
+  width: 80%;
+  margin: 30rpx auto;
+   border-radius: 10rpx;
+}
+.pupop_img{
+  width: 100%;
+  height: 180rpx;
+  border-radius: 10rpx;
+}
+
+.but_popup button{
+ font-size: 30rpx;
+ background: #2492F4;
+ color: #fff;
+ width: 90%;
+ margin-top: 60rpx;
+}

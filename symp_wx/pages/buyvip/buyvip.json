@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "购买会员",
+  "usingComponents": {
+    "van-button": "/miniprogram_npm/vant-weapp/dist/button/index",
+    "van-row": "/miniprogram_npm/vant-weapp/dist/row/index",
+    "van-col": "/miniprogram_npm/vant-weapp/dist/col/index",
+    "van-popup": "/miniprogram_npm/vant-weapp/dist/popup/index"
+  }
+}

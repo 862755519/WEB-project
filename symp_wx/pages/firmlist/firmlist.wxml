@@ -1,0 +1,28 @@
+<view class="container">
+  <van-row class="row" wx:for='{{list}}' wx:key="key">
+    <van-col span="5">
+      <image class="logo" src="{{item.bcLogo}}"></image>
+    </van-col>
+    <van-col span="14" class="text_con">
+      <view class="name">{{item.bcName}}</view>
+      <view class="tab_con">
+        <span wx:for="{{wxs.split(item.bcLabel)}}" wx:key="key">{{item}}</span>
+      </view>
+      <wxs module="wxs">
+        var split = function(data) {
+          var test = data.split(",")
+          return test;
+        }
+        module.exports = {
+          split: split
+        }
+      </wxs>
+    </van-col>
+    <van-col span="5">
+      <button class="but" bindtap="select" data-name="{{item.bcName}}" data-id='{{item.id}}'>选择</button>
+    </van-col>
+  </van-row>
+  <!-- <van-loading class="load" type="spinner" color="#2492F4" hidden="{{searchLoading}}"/> -->
+  <view class="accomplish" hidden="{{show}}">没有更多了</view>
+  
+</view>

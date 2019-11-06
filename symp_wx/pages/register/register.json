@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "注册",
+  "usingComponents": {
+    "van-button": "/miniprogram_npm/vant-weapp/dist/button/index",
+    "van-row": "/miniprogram_npm/vant-weapp/dist/row/index",
+    "van-col": "/miniprogram_npm/vant-weapp/dist/col/index",
+    "van-field": "/miniprogram_npm/vant-weapp/dist/field/index"
+  }
+}

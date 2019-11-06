@@ -1,0 +1,11 @@
+ {
+    "navigationBarTitleText": "选择行业",
+    "usingComponents": {
+      "van-button": "/miniprogram_npm/vant-weapp/dist/button/index",
+      "van-row": "/miniprogram_npm/vant-weapp/dist/row/index",
+      "van-col": "/miniprogram_npm/vant-weapp/dist/col/index",
+      "van-grid": "/miniprogram_npm/vant-weapp/dist/grid/index",
+        "van-grid-item": "/miniprogram_npm/vant-weapp/dist/grid-item/index",
+        "van-toast": "/miniprogram_npm/vant-weapp/dist/toast/index"
+    }
+  }

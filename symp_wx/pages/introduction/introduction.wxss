@@ -1,0 +1,13 @@
+/* pages/introduction/introduction.wxss */
+.section{
+    margin-top:20rpx;
+    border:1px solid #ccc;
+    padding: 10rpx;
+    /* width: 100%; */
+    height: 400rpx;
+    border-radius: 20rpx;
+    margin:20rpx;
+}
+.btn{
+    margin-top:350rpx
+}

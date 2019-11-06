@@ -1,0 +1,92 @@
+<view class="container">
+  <view class="banner">
+    <view class="head_div">
+      <view class="head_left">
+        <image class="head_img" src="{{userinfo.avatar}}"></image>
+      </view>
+      <view class="head_right">
+        <view class="username">{{userinfo.nickname}}
+          <span wx:if="{{userinfo.membershipRank==0}}" class="member">普通会员</span>
+          <span wx:if="{{userinfo.membershipRank==1}}" class="member">事业合伙人</span>
+          <span wx:if="{{userinfo.membershipRank==2}}" class="member">华商合伙人</span>
+          <span wx:if="{{userinfo.membershipRank==3}}" class="member">运营中心</span>
+        </view>
+        <view  class="userdesc">{{bcname}}</view>
+      </view>
+    </view>
+   <view class="time_con">
+   <span  class="time" wx:if="{{userinfo.membershipRank!=0}}">会员有限期 {{userinfo.vipOpeningTime}}</span>
+   </view>
+    
+
+    <view class="menu" id="fist_menu" bindtap="setuser">
+      <view class="icon_div">
+        <image class="menu_icon" src="../../images/icon1.png"></image>
+      </view>
+      <view class="menu_name">个人信息</view>
+      <view class="meun_right">
+        <image class="right_icon" src="../../images/left.png"></image>
+      </view>
+    </view>
+    
+    <view class="menu"  bindtap="buyvip">
+      <view class="icon_div">
+        <image class="menu_icon" src="../../images/vip.png"></image>
+      </view>
+      <view class="menu_name">购买会员</view>
+      <view class="meun_right">
+        <image class="right_icon" src="../../images/left.png"></image>
+      </view>
+    </view>
+
+     <view class="menu"  bindtap="sing">
+      <view class="icon_div" >
+        <image class="menu_icon" src="../../images/sing.png"></image>
+      </view>
+      <view class="menu_name">每日签到</view>
+      <view class="meun_right">
+        <image class="right_icon" src="../../images/left.png"></image>
+      </view>
+    </view>
+
+    <view class="menu" bindtap="message">
+      <view class="icon_div">
+        <image class="menu_icon" src="../../images/icon4.png"></image>
+      </view>
+      <view class="menu_name">消息中心</view>
+      <view class="meun_right">
+        <image class="right_icon" src="../../images/left.png"></image>
+      </view>
+    </view>
+    <view class="line"></view>
+    <view class="menu" bindtap="uptext">
+      <view class="icon_div">
+        <image class="menu_icon" src="../../images/icon2.png"></image>
+      </view>
+      <view class="menu_name">发布文章</view>
+      <view class="meun_right">
+        <image class="right_icon" src="../../images/left.png"></image>
+      </view>
+    </view>
+    <view class="menu" bindtap="vipcart">
+      <view class="icon_div" >
+        <image class="iconmp" src="../../images/mingpian.png"></image>
+      </view>
+      <view class="menu_name">名片中心</view>
+      <view class="meun_right">
+        <image class="right_icon" src="../../images/left.png"></image>
+      </view>
+    </view>
+    
+    <view class="menu" bindtap="showlist">
+      <view class="icon_div">
+        <image class="menu_icon" src="../../images/icon5.png"></image>
+      </view>
+      <view class="menu_name">访客记录</view>
+      <view class="meun_right">
+        <image class="right_icon" src="../../images/left.png"></image>
+      </view>
+    </view>
+
+  </view>
+</view>

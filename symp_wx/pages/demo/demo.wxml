@@ -1,0 +1,44 @@
+<view class="page-body">
+  <view class="title">
+      <van-row>
+  <van-col span="24">
+      <van-cell-group>
+  <van-field
+    title-width="160rpx"
+    maxlength="40"
+    value="{{ message }}"
+    label="文章标题"
+    type="textarea"
+    bindinput="titleInput"
+    placeholder="请输入文章标题(40字以内)"
+    autosize
+    border="{{ false }}"
+  />
+</van-cell-group>
+  </van-col>
+</van-row>
+
+   <van-row>
+  <van-col span="6"><view class="imgtitle">文章封面</view></van-col>
+  <van-col span="18"><view class="text_img" bindtap="addimg">
+   点击添加封面图片
+  <image src="{{textimg}}"></image>
+  </view></van-col>
+</van-row>
+  </view>
+  <view class='wrapper bianji_icon'>
+    <view class='toolbar' bindtap="format">
+      <i class="iconfont icon-zitijiacu {{formats.bold ? 'ql-active' : ''}}" data-name="bold"></i>
+      <i class="iconfont icon-zitixieti {{formats.italic ? 'ql-active' : ''}}" data-name="italic"></i>
+      <i class="iconfont icon-zitishanchuxian {{formats.strike ? 'ql-active' : ''}}" data-name="strike"></i>
+      <i class="iconfont icon-outdent" data-name="indent" data-value="-1"></i>
+      <i class="iconfont icon-indent" data-name="indent" data-value="+1"></i>
+      <i class="iconfont icon-fengexian" bindtap="insertDivider"></i>
+      <i class="iconfont icon-charutupian" bindtap="insertImage"></i>
+    </view>
+   </view>
+   </view>
+    <editor  id="editor" class="ql-container" placeholder="请输入文章内容" showImgSize showImgToolbar showImgResize bindinput="getEditorValue" bindready="onEditorReady">
+    </editor>
+
+    <button class="text_but" bindtap="uptext">上传文章</button>

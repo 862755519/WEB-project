@@ -1,0 +1,39 @@
+<view class="container">
+  <van-tabs active="{{ active }}" bind:click="change" color="#2492F4">
+       
+    <van-tab title="精彩内容" name="0">
+      <view class="cart" wx:for='{{list}}' wx:key="key" bindtap="showtext" data-id="{{item.id}}">
+        <view class="cart_img">
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="cart_text">
+          <view class="text1">{{item.title}}</view>
+          <view class="text2"><image class="head_img" src="{{item.avatarUrl}}"></image>{{item.nickName}}</view>
+          <view class="textname">
+          <span class="text_span2">{{item.createTime}}</span></view>
+        </view>
+      </view>
+      
+    </van-tab>
+     
+
+    <van-tab wx:for='{{taglist}}' wx:key="key" name="{{item.id}}" title="{{item.bcName}}">
+      <view bindtap="showtext" data-id="{{item.id}}" class="cart" wx:for='{{textlist}}' wx:key="key">
+        <view class="cart_img">
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="cart_text">
+          <view class="text1">{{item.title}}</view>
+          <view class="text2">
+            <image class="head_img" src="{{item.avatarUrl}}"></image>{{item.nickName}}</view>
+          <view class="textname">
+             <span class="text_span2">{{item.createTime}}</span>
+          </view>
+        </view>
+      </view>
+        
+    </van-tab>
+    
+  </van-tabs>
+       <view class="accomplish" hidden="{{show}}">没有更多了</view>
+</view>

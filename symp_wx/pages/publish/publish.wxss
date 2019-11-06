@@ -1,0 +1,52 @@
+/* pages/publish/publish.wxss */
+.ql-container{
+  border:1px solid pink;
+}
+.col{
+  margin: 10rpx auto;
+  width: 90%;
+  border-bottom: 1px solid #EFEFF5;
+}
+.line{
+  background: #F6F6F6;
+  height: 20rpx;
+}
+.text_title{
+  font-size: 35rpx;
+  padding-top: 30rpx;
+  padding-left: 35rpx;
+  padding-bottom: 25rpx;
+  /* text-align: center; */
+}
+.toWrite{
+  width: 90%;
+  margin: 10rpx auto;
+}
+.write_con{
+  width: 90%;
+  margin: 10rpx auto;
+  overflow: hidden;
+}
+
+.input_view{
+  font-size: 35rpx;
+  color: #2492F4;
+  width: 100%;
+  line-height: 42rpx;
+}
+.up{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  margin-bottom:20rpx;
+}
+.up button{
+  color: #fff;
+  background: #2492F4;
+  width: 90%;
+  font-size: 37rpx;
+}
+.delete image{
+  width: 70rpx;
+  height: 70rpx;
+}

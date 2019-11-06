@@ -1,0 +1,18 @@
+<view class="industry">
+  <view class="big_box">
+    <van-row class="big_title">
+      <van-col span="24">行业列表</van-col
+      
+      >
+    </van-row>
+    <view class="list">
+      <van-row>
+        <van-col span="6" wx:for='{{list}}' wx:key="key">
+          <view class="box {{state==index?'blue':''}}"   bindtap="select" data-name='{{item.name}}' data-id='{{item.id}}' data-key='{{index}}' >{{item.name}}</view>
+        </van-col>
+      </van-row>
+    </view>
+  </view>
+
+  <view class="but" bindtap="confirm">确认选择</view>
+</view>

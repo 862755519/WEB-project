@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "事业名片",
+  "usingComponents": {
+    "van-panel": "/miniprogram_npm/vant-weapp/dist/panel/index",
+    "van-row": "/miniprogram_npm/vant-weapp/dist/row/index",
+    "van-col": "/miniprogram_npm/vant-weapp/dist/col/index",
+    "van-button": "/miniprogram_npm/vant-weapp/dist/button/index"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "每日签到",
+  "usingComponents": {
+    "van-button": "/miniprogram_npm/vant-weapp/dist/button/index",
+    "van-row": "/miniprogram_npm/vant-weapp/dist/row/index",
+    "van-col": "/miniprogram_npm/vant-weapp/dist/col/index",
+    "van-collapse": "/miniprogram_npm/vant-weapp/dist/collapse/index",
+    "van-collapse-item": "/miniprogram_npm/vant-weapp/dist/collapse-item/index"
+  },
+  "component": true
+}

@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="messages">
+    <view class="messages_name">天气预报</view>
+    <view class="messages_time">2018-04-56 5:45</view>
+    <view class="messages_text">明天农历三月二十九日，晴转多云，小雨，最高气温23度，最低气温8度      </view>
+  </view>
+  <view class="messages">
+    <view class="messages_name">天气预报</view>
+    <view class="messages_time">2018-04-56 5:45</view>
+    <view class="messages_text">明天农历三月二十九日，明天农历三月二十九日，晴转多云，小雨，最高气温23度，最低气温8度晴转多云，小雨，最高气温23度，最低气温8度      </view>
+  </view>
+  <view class="messages">
+    <view class="messages_name">天气预报</view>
+    <view class="messages_time">2018-04-56 5:45</view>
+    <view class="messages_text">明天农历三月二十九日，晴转多云，明天农历三月二十九日，晴转多云，小雨，最高气温23度，最低气温8度小雨，最高气温23度，最低气温8度  明天农历三月二十九日，晴转多云，小雨，最高气温23度，最低气温8度    </view>
+  </view>
+  <view class="messages">
+    <view class="messages_name">天气预报</view>
+    <view class="messages_time">2018-04-56 5:45</view>
+    <view class="messages_text">明天农历三月二十九日，晴转多云，小雨，最高气温23度，最低气温8度      </view>
+  </view>
+</view>

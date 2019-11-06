@@ -1,0 +1,42 @@
+.add_box{
+    width: 100%;
+    height: 800rpx;
+    /* border:1px solid orange; */
+}
+.userInfo{
+    width: 100%;
+    height: auto;
+    padding: 10rpx;
+    position: absolute;
+}
+.title{
+    height: 80rpx;
+    line-height: 80rpx;
+}
+.btn{
+    width: 90%;
+    height: 100rpx;
+    line-height: 100rpx;
+    margin:20rpx auto;
+    text-align: center;
+    color: #fff;
+    background-color: #2492F4;
+}
+.user_img{
+    width: 140rpx;
+    height:140rpx;
+    position: relative; 
+    float: right;
+    top: 540rpx;
+    right:30rpx;
+}
+.stepper{
+    display: block;
+    margin-bottom:10rpx;
+    position: relative;
+    top: 570rpx;
+}
+#map{
+    width: 100%;
+    height: 100%;
+}

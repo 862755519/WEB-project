@@ -1,0 +1,26 @@
+.user_head{
+  height: 220rpx;
+  
+  text-align: center;
+  line-height: 200rpx;
+}
+.user_head image{
+  width: 150rpx;
+  height: 150rpx;
+  margin-top: 30rpx;
+ 
+  border-radius: 80rpx;
+}
+.button{
+  width: 90%;
+  background: #2492F4;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 100rpx;
+  font-size: 35rpx;
+}
+.my-item{
+ 
+  height: 150rpx;
+  padding: 30rpx;
+}

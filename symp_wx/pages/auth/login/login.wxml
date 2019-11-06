@@ -1,0 +1,10 @@
+<view class="container">
+ <view class="banner">
+ <image src="../../../images/logo.png"></image>
+ </view>
+  <view class="login-box">
+    <button type="primary" wx:if='{{true}}' open-type="getUserInfo" class="wx-login-btn" bindgetuserinfo="wxLogin">微信授权登录</button>
+   <view class="text">*已阅读《事业名片协议》，并同意微信登录
+   </view>
+  </view>
+</view>

@@ -1,0 +1,43 @@
+<view class="container">
+  <van-row>
+    <van-col span="19">
+      <view class="text_title">{{textinfo.artTitle}}</view>
+    </van-col>
+    <van-col span="5">
+      <view class="good" bindtap="bindFabulous" wx:if="{{!isFabulous}}" >
+        <image class="good_icon" src="../../images/end_fabulous.png"></image>{{count}}</view>
+
+      <view class="good" bindtap="bindFabulous"  wx:if="{{isFabulous}}">
+        <image class="good_icon" src="../../images/start_fabulous.png"></image>{{count}}</view>
+    </van-col>
+  </van-row>
+  <van-row>
+    <van-col span="12">
+      <view class="writer">作者：{{userinfo.nickname}}</view>
+    </van-col>
+    <van-col span="12">
+      <view class="writer1">{{textinfo.addTime}} </view>
+    </van-col>
+  </van-row>
+  
+  <view class="text_body">
+    <rich-text nodes="{{texthtml}}"></rich-text>
+  </view>
+</view>
+ <view class="line"></view>
+ <view class="box">
+   <van-row>
+  <van-col span="6">
+  <view class="head"><image class="head_img" src="{{userinfo.avatar}}"></image></view>
+  </van-col>
+  <van-col span="18">
+   <view class="username">{{userinfo.nickname}}</view>
+   <view class="userfirm">{{bcname}}</view>
+  </van-col>
+  </van-row>
+ </view>
+ <view class="qr">
+  <image class="ewm_img" src="{{userinfo.qrCode}}"></image>
+  <view class="ewm_text">扫码加我好友</view>
+  <button class="but" bindtap="bindCard">查看名片</button>
+ </view>
